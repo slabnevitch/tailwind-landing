@@ -1,0 +1,17 @@
+header.header
+	div(class="container flex justify-between items-center py-2 sm:py-4 md:py-6 lg:py-8")
+		.header__logo(class="mr-[15px] shrink-0 max-w-[132px]")
+			img(src="img/logo.svg" alt="alt")
+
+		.header__menu.menu-header
+			button(class="toggle-mnu md:hidden")
+				span
+			nav(class="menu-header__body sm:fixed sm:top-0 sm:left-0 sm:w-full sm:h-full sm:bg-accent")
+
+				- var items = ['About', 'Services', 'Case Studies', 'Careers', 'Blog']
+				ul(class="menu sm:flex sm:gap-12")
+					each item in items
+						li.menu__item
+							a(href="#").menu__link= item
+
+
