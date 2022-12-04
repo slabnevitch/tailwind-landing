@@ -1,2 +1,17 @@
-footer
-	h2 Footer
+footer.bg-dark-bg
+	div(class="container grid gap-20 sm:grid-cols-[319px_1fr] py-[30px] sm:py-[90px]")
+		.footer__info
+			.footer__logo.mb-5
+				img(src="img/logo.svg" alt="alt")
+			form
+				p(class="mb-[13px] text-white") Sign up for our newsletter to get latest news from us
+				input(autocomplete="off" type="text" name="" class="block w-full mb-[20px] bg-[#595959] h-[51px] placeholder:italic placeholder:text-[#747474] text-white focus:ring-sky-500 rounded-xl border border-[#595959] px-[18px]" placeholder="Enter your email")
+
+				button.btn Submit
+		.footer__info
+			div(class="mb-[22px] text-accent") Jump to
+			- var items = ['About', 'Services', 'Case Studies', 'Careers', 'Blog']
+			ul(class="menu")
+				each item in items
+					li(class="menu__item mb-[12px] last-of-type:mb-0")
+						a(href="#" class="menu__link text-white")= item

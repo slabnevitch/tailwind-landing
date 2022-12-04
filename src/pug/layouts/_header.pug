@@ -6,12 +6,12 @@ header.header
 		.header__menu.menu-header
 			button(class="toggle-mnu md:hidden z-20")
 				span
-			nav(class="menu-header__body fixed sm:static top-0 left-0 w-full h-full sm:h-auto bg-accent sm:bg-transparent translate-x-[-100%] sm:translate-x-0 transition-all z-10 sm:z-0 overflow-auto sm:overflow-visible")
+			nav(class="menu-header__body fixed md:static top-0 left-0 w-full h-full md:h-auto bg-accent md:bg-transparent translate-x-[-100%] md:translate-x-0 transition-all z-10 md:z-0 overflow-auto md:overflow-visible")
 
 				- var items = ['About', 'Services', 'Case Studies', 'Careers', 'Blog']
-				ul(class="menu flex-col sm:flex-row align-center flex sm:gap-12 h-full sm:h-auto justify-center")
+				ul(class="menu flex-col md:flex-row align-center flex md:gap-12 h-full md:h-auto justify-center")
 					each item in items
 						li.menu__item.text-center
-							a(href="#" class="menu__link text-white sm:text-text text-xl sm:text-lg py-2.5 sm:py-0 inline-block hover:text-accent transition-colors")= item
+							a(href="#" class="menu__link text-white md:text-text text-xl md:text-lg py-2.5 md:py-0 inline-block hover:text-accent transition-colors")= item
 
 

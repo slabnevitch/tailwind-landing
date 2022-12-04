@@ -1,10 +1,10 @@
 section.about
-	.container
-		.about__left
-			.about__subtitle about us
+	div(class="container grid gap-4 lg:grid-cols-[1fr_445px]")
+		div(class="about__left mb-5 md:mb-0")
+			.about__subtitle.text-accent.font-bold.mb-2 about us
 			h2 The team behind the brand.
-			p Proin elementum fermentum auctor. Nulla semper, est eget congue pellentesque, erat nulla molestie mi, in finibus leo nisl ac lectus. Praesent non urna. Nulla congue porta lectus in laoreet. Aenean pellentesque vitae metus id porttitor.t
-			a(href="#").btn Learn More
+			p.max-w-sm.mb-5 Proin elementum fermentum auctor. Nulla semper, est eget congue pellentesque, erat nulla molestie mi, in finibus leo nisl ac lectus. Praesent non urna. Nulla congue porta lectus in laoreet. Aenean pellentesque vitae metus id porttitor.t
+			a(href="#" class="btn w-full sm:w-auto") Learn More
 		
 		.about__pict
-			img(src="img/about.jpg" alt="alt")
+			img(src="img/about.jpg" alt="alt").max-w-full

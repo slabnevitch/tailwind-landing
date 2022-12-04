@@ -21,11 +21,13 @@ button{
 }
 
 .toggle-mnu{
-	position: fixed;
-	right: 30px;
+	// position: fixed;
+  position: relative;
+	// right: 30px;
 	top: 0;
   width: 28px;
   height: 28px;
+ top: -14px;
   padding: 0;
   background-color: transparent;
   border: none;
