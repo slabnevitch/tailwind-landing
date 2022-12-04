@@ -11,6 +11,7 @@ module.exports = {
 		extend: {
 			colors: {
 				"accent": '#FF0D38',
+				"text": "#4D4244",
 				// Primary
 				"primary-50": "var(--primary-50)",
 				"primary-100": "var(--primary-100)",

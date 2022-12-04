@@ -190,7 +190,7 @@ function watchFiles() {
 	// Tailwind CSS стили
 	watch(["./tailwind.config.js", "./src/sass/tailwind/*.scss"], series(devStylesTailwind, previewReload));
 	// SASS стили
-	watch(["./src/sass/**/*.sass", "./src/components/**/*.sass"], devStyles);
+	watch(["./src/sass/**/*.sass", "./src/sass/**/*.scss", "./src/components/**/*.sass"], devStyles);
 	// JADE
 	watch("./src/**/*.pug", series(jade, devStylesTailwind, previewReload));
 

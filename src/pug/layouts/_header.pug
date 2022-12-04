@@ -4,14 +4,14 @@ header.header
 			img(src="img/logo.svg" alt="alt")
 
 		.header__menu.menu-header
-			button(class="toggle-mnu md:hidden")
+			button(class="toggle-mnu md:hidden z-20")
 				span
-			nav(class="menu-header__body sm:fixed sm:top-0 sm:left-0 sm:w-full sm:h-full sm:bg-accent")
+			nav(class="menu-header__body fixed sm:static top-0 left-0 w-full h-full sm:h-auto bg-accent sm:bg-transparent translate-x-[-100%] sm:translate-x-0 transition-all z-10 sm:z-0 overflow-auto sm:overflow-visible")
 
 				- var items = ['About', 'Services', 'Case Studies', 'Careers', 'Blog']
-				ul(class="menu sm:flex sm:gap-12")
+				ul(class="menu flex-col sm:flex-row align-center flex sm:gap-12 h-full sm:h-auto justify-center")
 					each item in items
-						li.menu__item
-							a(href="#").menu__link= item
+						li.menu__item.text-center
+							a(href="#" class="menu__link text-white sm:text-text text-xl sm:text-lg py-2.5 sm:py-0 inline-block hover:text-accent transition-colors")= item
 
 
