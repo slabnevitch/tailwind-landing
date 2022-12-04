@@ -15,4 +15,16 @@
   .container {
     @apply max-w-[1080px];
   }
+  h1 {
+    @apply font-black text-lg sm:text-5xl max-w-[620px] mb-[18px] mt-[30px] sm:mt-20;
+  }
+  h2 {
+    @apply font-black text-lg sm:text-[36px] mb-[10px];
+  }
+  .btn {
+    @apply inline-flex items-center justify-center bg-accent py-[10px] px-[32px] rounded-2xl text-white sm:text-[20px] border-2 border-transparent hover:bg-white hover:text-accent hover:border-accent transition-colors;
+  }
+  .btn-emp {
+    @apply bg-white border-accent text-accent hover:bg-accent hover:text-white;
+  }
 }

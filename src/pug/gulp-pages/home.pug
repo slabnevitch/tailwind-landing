@@ -1,1 +1,8 @@
-include ../pages/home/index.pug
+extends ./../layouts/main.pug
+
+block variables
+	- const title = "Home";
+
+block content
+	include ../sections/main.pug
+	include ../sections/about.pug
