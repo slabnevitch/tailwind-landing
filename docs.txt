@@ -1,0 +1,11 @@
+=======’“мл====================
+- все стр-цы. класть в src/pug/gulp-pages
+- секции страниц класть в src/pug/sections
+- повтор€ющиес€ секции (header, footer и т.д.) - в src/pug/sections/templates
+- pug-миксины из основной сборки лежат в src/сomponents/_mixins.pug
+- оригинальный pug-миксин дл€ свг-иконок от автора этой сборки лежит в src/pug/layouts/_use-svg.pug
+- шаблон главной стр-цы., от которой расшир€ютс€ все остальные -  src/pug/layouts/main.pug
+
+=======—тили====================
+- стили src/sass/base/_base.scss - аналог _adjustment.scss из моей сборки
+- tailwind-директивы @layer base, @layer components и т.д. - в файле src/sass/tailwind/a.tailwind.scss либо src/sass/tailwind/main.scss
