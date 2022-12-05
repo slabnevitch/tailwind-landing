@@ -9,3 +9,12 @@
 =======Стили====================
 - стили src/sass/base/_base.scss - аналог _adjustment.scss из моей сборки
 - tailwind-директивы @layer base, @layer components и т.д. - в файле src/sass/tailwind/a.tailwind.scss либо src/sass/tailwind/main.scss
+- src/sass/index.sass - аналог main.scss из основной сборки
+
+=======Скрипты====================
+!!Скрипты не проходят через babel
+- основной код пишется в src/js/index.js (аналог common.js из основной сборки)
+- нужные скрипты и библиотеки подключаются:
+	- в src/pug/layouts/main.pug через тег script
+	- на каждой странице отдельно через block js
+- сторонние библиотеки хранятся в src/libs

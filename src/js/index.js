@@ -5,20 +5,19 @@ document.querySelector('.toggle-mnu').onclick = function(e) {
 	document.querySelector('.menu-header__body').classList.toggle('translate-x-[-100%]');
 }
 
-// tabsToggle(".class", ".class", "class")
-function tabsToggle(btnSelector, contentWrapperSelector, activeBtnSelector) {
-	let tabBtn = $(btnSelector);
-	let tabContent = $(contentWrapperSelector);
-
-	tabBtn.click(function (e) {
-		e.preventDefault();
-		let that = $(this);
-		let btnTarget = that.data("target");
-
-		that.parent().find(tabBtn).removeClass(activeBtnSelector);
-		that.addClass(activeBtnSelector);
-
-		$(btnTarget).parent().find(tabContent).hide();
-		$(btnTarget).show();
-	});
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
 }
+
+// Whenever the user explicitly chooses light mode
+localStorage.theme = 'light'
+
+// Whenever the user explicitly chooses dark mode
+localStorage.theme = 'dark'
+
+// Whenever the user explicitly chooses to respect the OS preference
+// localStorage.removeItem('theme')
+console.log(localStorage.theme)

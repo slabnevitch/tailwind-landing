@@ -6,11 +6,7 @@
     font-family: "Red Hat Display", sans-serif;
   }
 }
-@layer base {
-  body {
-    background-color: pink;
-  }
-}
+@layer base {}
 @layer components {
   .container {
     @apply max-w-[1080px];
