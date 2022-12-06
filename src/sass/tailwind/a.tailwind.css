@@ -6,7 +6,11 @@
     font-family: "Red Hat Display", sans-serif;
   }
 }
-@layer base {}
+@layer base {
+  body {
+    @apply dark:text-white;
+  }
+}
 @layer components {
   .container {
     @apply max-w-[1080px];

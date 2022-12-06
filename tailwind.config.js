@@ -1,7 +1,7 @@
 module.exports = {
 	mode: "jit",
 	content: ["./src/**/*.pug", "./docs/js/scripts.min.js"],
-	// darkMode: false,
+	 darkMode: 'class',
 	theme: {
 		// Все что будет объявлено внутри theme - перезапишет существующие стили в Tailwind CSS
 		// colors: {

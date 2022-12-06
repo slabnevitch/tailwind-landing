@@ -8,9 +8,10 @@
 	}
 }
 @layer base {
-  // body {
-  //   background-color: pink;
-  // }
+  body {
+    // background-color: pink;
+    @apply dark:text-white;
+  }
 }
 @layer components {
   .container {
